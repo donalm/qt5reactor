@@ -408,7 +408,7 @@ def win32install():
         except ReactorAlreadyInstalledError:
             raise
         except Exception as e:
-            raise Qt5ReactorError('Unexpected error while installing') from e
+            raise Qt5ReactorError('Unexpected error while installing')
         else:
             raise Qt5ReactorError(
                 'Exception expected but not raised while installing',
